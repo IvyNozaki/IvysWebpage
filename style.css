@@ -1,0 +1,92 @@
+.bubble {
+    z-index: 1;
+    content: "";
+    margin: 300px auto;
+    padding: 30px;
+    text-align:left;
+    font-size:30px;
+    font-weight: 700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 85%;
+    max-width: 1000px;
+    height: min-content;
+    position: static;
+    border-radius: 20px;
+    background-color: powderblue;
+}
+
+#avatar-container {
+    z-index: 2; 
+    position: fixed;  
+    right: 0px;
+    bottom: 20px;
+    width: 200px;
+    height: 200px;
+    /* border-radius: 100%; */
+    background-image: url('svg_avatar_blank.svg');
+    background-size: cover;
+}
+
+.eye-container {
+    z-index: 1;
+    position: absolute;
+    top: 60px;
+    left: 12px;
+    height: 40px;
+    width: 88px;
+    background-color:transparent;
+
+}
+
+#rEye {
+    z-index: 1;
+    position: fixed;
+    right: 110px;
+    bottom: 125px;
+    width: 10px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#lEye {
+    z-index: 1;
+    position: fixed;
+    right: 166px;
+    bottom: 135px;
+    width: 9px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#mouth {
+    z-index: 4;
+    position:fixed;
+    right: 110px;
+    bottom: 55px;
+    width: 100px;
+    height: 100px;
+}
+
+.smile {
+    z-index: 5;
+    position:absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 80px;
+    height: 70px;
+    background: url('closedMouth.svg');
+    background-size: cover;
+}
+
+.speak {
+    z-index: 5;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 80px;
+    height: 70px;
+    background-image: url('openMouth.svg');
+    background-size: cover;
+}
