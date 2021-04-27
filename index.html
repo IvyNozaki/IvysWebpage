@@ -1,69 +1,100 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="svg_avatar.svg">
-    <link rel="stylesheet" href="style.css">
-    <title>itmeivy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ivy Nozaki">
+  <link rel="icon" href="assets/svg_avatar.svg">
+  <link rel="stylesheet" href="style.css">
+  <title>Ivy Nozaki</title>
 </head>
+  <body id="mainpage">
 
-<style>A {text-decoration: none;}</style>
+    <!-- Main container -->
+    <div class="bg-container">
+      <div class="hello-world">HELLO WORLD</div>
+      <!-- Name -->
+      <div class="greetings">
+        <h1 class="hello">Ivy Nozaki</h1>
+      </div>
 
+      <!-- Moon -->
+      <div class="moon-container">
+        <div id="moon"></div>
+        <div id="selfie"></div>
+      </div>
 
-<body>
-
-    <h1>Hello World!!! Welome to my webpage.</h1>
-
-    <div class="bubble aboutme">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis adipisci alias accusamus iure soluta voluptates? Consequuntur ad dignissimos necessitatibus amet id enim debitis nostrum aperiam?
-        </p>
-    </div>
-
-    <div class="bubble">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia aliquid molestias enim, laboriosam nihil ab voluptatum impedit esse a eveniet! Architecto aperiam culpa quod minima similique debitis rerum ex officia sint, eum obcaecati hic.</p>
-    </div>
-
-    <div class="bubble">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe suscipit fugiat, fuga eos maxime dolore! Sequi dicta molestiae nostrum quis sapiente a ea magnam, non laboriosam velit.</p>
-    </div>
-
-    <div class="bubble">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quisquam veritatis similique doloremque, ipsa id, cumque nam exercitationem sit nisi atque enim aliquam aspernatur excepturi labore qui quos blanditiis corporis impedit ad quod, illo aperiam iste? Ipsa, excepturi aliquam? Enim.</p>
-    </div>
-
-
-    <div id="avatar-container">
-        <div class="eye-container">
-            <div id="rEye">
-            </div>
-        
-            <div id="lEye">
-            </div>
+      <!-- Clouds -->
+      <div class="cloud-container">
+        <div class="left-clouds left-1"></div>
+        <div class="left-clouds left-2"></div>
+        <div class="left-clouds left-3"></div>
+        <div class="right-clouds right-1"></div>
+        <div class="right-clouds right-2"></div>
+        <div class="right-clouds right-3"></div>
+        <div class="center-cloud"></div>
+      </div>
+      
+        <!-- Bio -->
+      <div class="bio-container">
+        <div class="bio"><h1>Aloha!</h1>
+          <p>I am a Full Stack Developer based in Honolulu, Hawaii. I am currently a student at MIT xPRO for Professional Certificate in Coding: Full Stack Development with MERN. I have a passion for creativity so I have a heavy focus on Front End web design. I want to build fun, beautiful and intuitive websites.</p>
         </div>
-    
-        <div id="mouth">
-            <div id="action" class="smile"></div>
+
+        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/eki3T6bTemk?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      </div>
+
+      
+      
+
+      <div id="proj-container">
+        <div class="proj-title">
+          <a href="projects.html">VIEW MY PROJECTS</a> 
+          <p style="font-size:medium;">or click images below...</p></div>
+        <div class="balloon pacman">
+          <a href="projects.html#pacman-section"><img src="project-refs/pacman.png"></a>
         </div>
-    </div>
-    
+        <div class="balloon eyes">
+          <a href="projects.html#eyes-section"><img src="project-refs/eyes.png"></a>
+        </div>
+        <div class="balloon bus">
+          <a href="projects.html#bus-section"><img src="project-refs/bus.png"></a>
+        </div>
+      </div>
+      
+      
+      <!-- Avatar -->
+      <div class="flying-avatar"></div>
 
+      <div class="exit" onclick="hideCloud()">
+        <!-- <img src="assets/exit-button.png" class="exit" onclick="hideCloud()"> -->
+      </div>
 
+      <!-- Contact -->
+      <div id="contact-section" onclick="showCloud()">
+        <div id="contact">Connect with me</div>
+        <div class="contact-info">
+          <div>
+            <a href="https://www.linkedin.com/in/ivy-nozaki-095565205/"><img src="assets/linkedin-icon.png" class="linkedin"></a>
+          </div>
 
+          <div>
+            <a href="ivyacasio@gmail.com"><img src="assets/email-icon.png" class="email"></a>
+          </div>
 
-    <script src="script.js">
-    </script>
+          <div>
+            <a href="https://github.com/IvyNozaki" ><img src="assets/github-icon.png" class="github"></a>
+          </div>
 
-    <h3>Connect with me</h3>
+          <div>
+            <a href="projects.html" ><img src="assets/projects-icon.png" class="projects"></a>
+          </div>
 
-    <ul>
-        <a href="https://www.linkedin.com/in/ivy-nozaki-095565205/">LinkedIn / </a>
-        <a href="https://twitter.com/itmeivy">Twitter / </a>
-        <a href="https://www.instagram.com/ivynozaki.art/">Insta</a>
-    </ul>
+        </div>
+      </div>
+    </div> <!-- End of bg-container div-->
 
-</body>
-
+    <!-- Javascript -->
+    <script src="script.js"></script>
+  </body>
 </html>
